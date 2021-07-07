@@ -14,6 +14,6 @@
 - From all audio samples I extracted as features: MFCCs, Chromagram and Contrast with librosa and voice embeddings with pyannote.
 - I tried various classifiers on the data. A Support Vector Machine classifier yielded the best results (KNN coming in as second best with ~1% less accuracy).
 - The SVC achieves a **crossvalidated accuracy of +99%** (evaluated on 10 validation folds of the 45k ground truth podcast samples). The trained model is available in the repository and simply can be loaded and used.
-- In addition to the gender classification I added a **voice activity detection to remove sections without human utterances**. 
+- In addition to the gender classification I added a **voice activity detection (VAD) to remove sections without human utterances**. For the VAD I use a pretrained model from [pyannote](https://www.researchgate.net/publication/337019697_pyannoteaudio_neural_building_blocks_for_speaker_diarization). **I assume that the total margin of error is around +/-5%** (SVC classifier & VAD).
 - The **code allows for easy batch processing of many thousand files**. See this article for which I used this code to analyze around 2k epsiodes.
 - **The model will work with high accuracy on German / Swissgerman language**. Prediction proved to be quite language agnostic. Accuracy will decrease though.
