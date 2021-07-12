@@ -1,5 +1,5 @@
 ---
-# How much do men talk more in podcasts than women do?
+# How much more do men talk in podcasts than women do?
 ### Assessing the share of male and female voices in audio media with machine learning
 
 - This notebook makes it easy to **automatically assess the voice share of men and women in batches of MP3 audio files.** 
