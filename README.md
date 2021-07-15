@@ -7,6 +7,8 @@
 - The tool is **meant to facilitate analysis of gender imbalances in audio media** and **to reduce time consuming manual tracking** for media companies and producers.
 - Processing time on a local machine (Mac Mini M1) is around 1:10. So **10 hours of podcast episodes take roughly 1 hour of compute**. Analyzing for example the TOP 50 news podcasts in the German iTunes store (20 last epsiodes each, around 500hrs total playing time) takes roughly 50 hours. Retrieving the audio data from a fast SSD drive speeds up processing.
 
+[Here you can find a larger analysis of around 2'000 hours of pdocasts done with this code](http://www.rnck.me/posts/podcast_analysis/).
+
 ### How does it work?
 - I use a subset of the German CommonVoice data set (where the speaker's biological sex is labeled) as well as 45k podcast audio samples (German/Swissgerman) that I selected and labeled myself (with the help of unsupervised/semisupervised methods like KMeans, UMAP etc.).
 - I have gender balanced both data sets to avoid bias toward one biological sex as much as possible. Interestingly the CommonVoice data itself is [heavily gender imbalanced itself](https://github.com/rnckp/EPFL-Capstone-Project/blob/main/02_eda.ipynb). I also filtered the available data towards as much speaker variety as possible.
