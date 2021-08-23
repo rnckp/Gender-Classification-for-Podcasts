@@ -2,12 +2,12 @@
 ### Assessing the share of male and female voices in audio media with machine learning
 
 - This notebook makes it easy to **automatically assess the voice share of men and women in batches of MP3 audio files.** 
-- It is build for **analysis of podcast media**. 
+- It is build for the **analysis of podcast media**. 
 - This tool is derived from [this project](https://github.com/rnckp/EPFL-Capstone-Project). For the full context of the problem space have a look at [this notebook](https://github.com/rnckp/EPFL-Capstone-Project/blob/main/01_project_overview.ipynb).
 - The tool is **meant to facilitate analysis of gender imbalances in audio media** and **to reduce time consuming manual tracking** for media companies and producers.
 - Processing time on a local machine (Mac Mini M1) is around 1:10. So **10 hours of podcast episodes take roughly 1 hour of compute**. Analyzing for example the TOP 50 news podcasts in the German iTunes store (20 last epsiodes each, around 500hrs total playing time) takes roughly 50 hours. Retrieving the audio data from a fast SSD drive speeds up processing.
 
-[Here you can find a larger analysis of around 2'000 hours of pdocasts done with this code](http://www.rnck.me/posts/podcast_analysis/).
+[Here you can find a larger analysis of around 2'500 hours of podcasts done with this code](http://www.rnck.me/posts/podcast_analysis/).
 
 ### How does it work?
 - I use a subset of the German CommonVoice data set (where the speaker's biological sex is labeled) as well as 45k podcast audio samples (German/Swissgerman) that I selected and labeled myself (with the help of unsupervised/semisupervised methods like KMeans, UMAP etc.).
